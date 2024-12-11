@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "engineerpress/page-section",
+	"version": "0.1.0",
+	"title": "Page Section",
+	"category": "widgets",
+	"icon": "feedback",
+	"description": "A page section. Wraps other blocks and adds vertical padding.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"align": true
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "wide"
+		}
+	},
+	"textdomain": "engineerpress",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
