@@ -1,0 +1,28 @@
+{
+  "name": "engineerpress",
+  "version": "1.0.0",
+  "description": "WordPress theme for web engineer portfolio site. Child theme of Twenty Twenty-Five.",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "packages-update": "wp-scripts packages-update",
+    "plugin-zip": "wp-scripts plugin-zip",
+    "start": "wp-scripts start"
+  },
+  "author": "Mikael Tomovic",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^30.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikaeltomovic/engineerpress"
+  },
+  "bugs": {
+    "url": "https://github.com/mikaeltomovic/engineerpress/issues"
+  },
+  "homepage": "https://github.com/mikaeltomovic/engineerpress#readme"
+}
