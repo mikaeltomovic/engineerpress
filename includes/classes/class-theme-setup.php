@@ -39,7 +39,7 @@ class Theme_Setup extends Loader {
      * @return void
      */
     public function register_theme_blocks() : void {
-        // register_block_type( get_stylesheet_directory() . '/build/blocks/{BLOCK-NAME}/block.json' );
+        register_block_type( get_stylesheet_directory() . '/build/blocks/arrow-link/block.json' );
     }
 
     /**
