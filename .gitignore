@@ -1,0 +1,7 @@
+# MacOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node modules
+node_modules/
