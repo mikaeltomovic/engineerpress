@@ -16,7 +16,7 @@ class Theme_Setup extends Loader {
     public function init() : void {
         add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_styles' ] );
         add_action( 'init', [ $this, 'register_theme_blocks' ] );
-        add_action( 'init', [ $this, 'remove_core_patterns' ] );
+        add_action( 'init', [ $this, 'register_theme_pattern_category' ] );
     }
 
     /**
@@ -43,12 +43,13 @@ class Theme_Setup extends Loader {
         register_block_type( get_stylesheet_directory() . '/build/blocks/page-section/block.json' );
     }
 
-    /**
-     * Removes core patterns.
-     * 
-     * @return void
-     */
-    public function remove_core_patterns() : void {
-        remove_theme_support( 'core-block-patterns' );
+    public function register_theme_pattern_category() : void {
+        register_block_pattern_category(
+            'engineerpress',
+            [
+                'label' => __( 'EngineerPress', 'engineerpress' ),
+                'description' => __( 'Patterns for the EngineerPress theme.', 'engineerpress' )
+            ]
+        );
     }
 }
